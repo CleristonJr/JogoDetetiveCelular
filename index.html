@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>JOGO</title>
     <style>
         * {
@@ -63,7 +63,7 @@
             margin: 5% 20% 20% 20%;
             resize: none;
             text-align: center;
-            vertical-align:middle;
+            vertical-align: middle;
             line-height: 7vh;
             font-size: xx-large;
             color: aliceblue;
@@ -72,10 +72,12 @@
         }
 
         input {
+            cursor: pointer;
             border-radius: 15px;
-            width: 100%;
-            background-color: rgba(162, 154, 154, 0.0);
-            height: auto;
+            width: 10vw;
+            background-color: rgba(162, 154, 154, 0.2);
+            height: 5vh;
+            color: aliceblue;
         }
     </style>
 </head>
@@ -84,8 +86,13 @@
     <section>
         <h3>Insira a senha:</h3>
         <textarea name="senha"></textarea>
+        <input type="submit" value="Entrar" onclick="minhaFuncao()">
 
-
+        <script>
+            function minhaFuncao() {
+                window.location.href = "telaInicio.html";
+            }
+        </script>
 
     </section>
 
